@@ -20,6 +20,7 @@ targetoptions = {
       event: string,
       icon: string,
       label: string,
+      style: string,
       targeticon: string,
       item: string,
       action: function,
@@ -44,6 +45,7 @@ targetoptions = {
         type = "client", -- This specifies the type of event the target has to trigger on click, this can be "client", "server", "command" or "qbcommand", this is OPTIONAL and will only work if the event is also specified
         event = "Test:Event", -- This is the event it will trigger on click, this can be a client event, server event, command or qbcore registered command, NOTICE: Normal command can't have arguments passed through, QBCore registered ones can have arguments passed through
         icon = 'fas fa-example', -- This is the icon that will display next to this trigger option, all the icons can be found on fontawesome.com
+        style = "", -- This is where you can add the following to edit the color of the icon example: "--fa-primary-color: brown; --fa-secondary-color: tan; --fa-secondary-opacity: 1.0;",
         label = 'Test' -- This is the label of this option which you would be able to click on to trigger everything, this has to be a string
         targeticon = 'fas fa-example' -- This is the icon of the target itself, the icon changes to this when it turns blue on this specific option, this is OPTIONAL
         item = 'handcuffs', -- This is the item it has to check for, this option will only show up if the player has this item, this is OPTIONAL
@@ -75,6 +77,7 @@ exports['qb-target']:AddCircleZone("name", vector3(x, y, z), 1.5, { -- The name 
       type = "client", -- This specifies the type of event the target has to trigger on click, this can be "client", "server", "command" or "qbcommand", this is OPTIONAL and will only work if the event is also specified
       event = "Test:Event", -- This is the event it will trigger on click, this can be a client event, server event, command or qbcore registered command, NOTICE: Normal command can't have arguments passed through, QBCore registered ones can have arguments passed through
       icon = 'fas fa-example', -- This is the icon that will display next to this trigger option, all the icons can be found on fontawesome.com
+        style = "", -- This is where you can add the following to edit the color of the icon example: "--fa-primary-color: brown; --fa-secondary-color: tan; --fa-secondary-opacity: 1.0;",
       label = 'Test' -- This is the label of this option which you would be able to click on to trigger everything, this has to be a string
       targeticon = 'fas fa-example' -- This is the icon of the target itself, the icon changes to this when it turns blue on this specific option, this is OPTIONAL
       item = 'handcuffs', -- This is the item it has to check for, this option will only show up if the player has this item, this is OPTIONAL
@@ -117,6 +120,7 @@ targetoptions = {
       event: string,
       icon: string,
       label: string,
+      style: string,
       targeticon: string,
       item: string,
       action: function,
@@ -145,6 +149,7 @@ targetoptions = {
         type = "client", -- This specifies the type of event the target has to trigger on click, this can be "client", "server", "command" or "qbcommand", this is OPTIONAL and will only work if the event is also specified
         event = "Test:Event", -- This is the event it will trigger on click, this can be a client event, server event, command or qbcore registered command, NOTICE: Normal command can't have arguments passed through, QBCore registered ones can have arguments passed through
         icon = 'fas fa-example', -- This is the icon that will display next to this trigger option, all the icons can be found on fontawesome.com
+        style = "", -- This is where you can add the following to edit the color of the icon example: "--fa-primary-color: brown; --fa-secondary-color: tan; --fa-secondary-opacity: 1.0;",
         label = 'Test' -- This is the label of this option which you would be able to click on to trigger everything, this has to be a string
         targeticon = 'fas fa-example' -- This is the icon of the target itself, the icon changes to this when it turns blue on this specific option, this is OPTIONAL
         item = 'handcuffs', -- This is the item it has to check for, this option will only show up if the player has this item, this is OPTIONAL
@@ -179,6 +184,7 @@ exports['qb-target']:AddBoxZone("name", vector3(x, y, z), 1.5, 1.6, { -- The nam
       type = "client", -- This specifies the type of event the target has to trigger on click, this can be "client", "server", "command" or "qbcommand", this is OPTIONAL and will only work if the event is also specified
       event = "Test:Event", -- This is the event it will trigger on click, this can be a client event, server event, command or qbcore registered command, NOTICE: Normal command can't have arguments passed through, QBCore registered ones can have arguments passed through
       icon = 'fas fa-example', -- This is the icon that will display next to this trigger option, all the icons can be found on fontawesome.com
+        style = "", -- This is where you can add the following to edit the color of the icon example: "--fa-primary-color: brown; --fa-secondary-color: tan; --fa-secondary-opacity: 1.0;",
       label = 'Test' -- This is the label of this option which you would be able to click on to trigger everything, this has to be a string
       targeticon = 'fas fa-example' -- This is the icon of the target itself, the icon changes to this when it turns blue on this specific option, this is OPTIONAL
       item = 'handcuffs', -- This is the item it has to check for, this option will only show up if the player has this item, this is OPTIONAL
@@ -224,6 +230,7 @@ targetoptions = {
       event: string,
       icon: string,
       label: string,
+      style: string,
       targeticon: string,
       item: string,
       action: function,
@@ -251,6 +258,7 @@ targetoptions = {
         type = "client", -- This specifies the type of event the target has to trigger on click, this can be "client", "server", "command" or "qbcommand", this is OPTIONAL and will only work if the event is also specified
         event = "Test:Event", -- This is the event it will trigger on click, this can be a client event, server event, command or qbcore registered command, NOTICE: Normal command can't have arguments passed through, QBCore registered ones can have arguments passed through
         icon = 'fas fa-example', -- This is the icon that will display next to this trigger option, all the icons can be found on fontawesome.com
+        style = "", -- This is where you can add the following to edit the color of the icon example: "--fa-primary-color: brown; --fa-secondary-color: tan; --fa-secondary-opacity: 1.0;",
         label = 'Test' -- This is the label of this option which you would be able to click on to trigger everything, this has to be a string
         targeticon = 'fas fa-example' -- This is the icon of the target itself, the icon changes to this when it turns blue on this specific option, this is OPTIONAL
         item = 'handcuffs', -- This is the item it has to check for, this option will only show up if the player has this item, this is OPTIONAL
@@ -299,6 +307,7 @@ parameters = {
       event: string,
       icon: string,
       label: string,
+      style: string,
       targeticon: string,
       item: string,
       action: function,
@@ -320,6 +329,7 @@ parameters = {
         type = "client", -- This specifies the type of event the target has to trigger on click, this can be "client", "server", "command" or "qbcommand", this is OPTIONAL and will only work if the event is also specified
         event = "Test:Event", -- This is the event it will trigger on click, this can be a client event, server event, command or qbcore registered command, NOTICE: Normal command can't have arguments passed through, QBCore registered ones can have arguments passed through
         icon = 'fas fa-example', -- This is the icon that will display next to this trigger option, all the icons can be found on fontawesome.com
+        style = "", -- This is where you can add the following to edit the color of the icon example: "--fa-primary-color: brown; --fa-secondary-color: tan; --fa-secondary-opacity: 1.0;",
         label = 'Test' -- This is the label of this option which you would be able to click on to trigger everything, this has to be a string
         targeticon = 'fas fa-example' -- This is the icon of the target itself, the icon changes to this when it turns blue on this specific option, this is OPTIONAL
         item = 'handcuffs', -- This is the item it has to check for, this option will only show up if the player has this item, this is OPTIONAL
@@ -352,6 +362,7 @@ exports['qb-target']:AddTargetBone(bones, { -- The bones can be a string or a ta
       type = "client", -- This specifies the type of event the target has to trigger on click, this can be "client", "server", "command" or "qbcommand", this is OPTIONAL and will only work if the event is also specified
       event = "Test:Event", -- This is the event it will trigger on click, this can be a client event, server event, command or qbcore registered command, NOTICE: Normal command can't have arguments passed through, QBCore registered ones can have arguments passed through
       icon = 'fas fa-example', -- This is the icon that will display next to this trigger option, all the icons can be found on fontawesome.com
+        style = "", -- This is where you can add the following to edit the color of the icon example: "--fa-primary-color: brown; --fa-secondary-color: tan; --fa-secondary-opacity: 1.0;",
       label = 'Test' -- This is the label of this option which you would be able to click on to trigger everything, this has to be a string
       targeticon = 'fas fa-example' -- This is the icon of the target itself, the icon changes to this when it turns blue on this specific option, this is OPTIONAL
       item = 'handcuffs', -- This is the item it has to check for, this option will only show up if the player has this item, this is OPTIONAL
@@ -385,6 +396,7 @@ parameters = {
       event: string,
       icon: string,
       label: string,
+      style: string,
       targeticon: string,
       item: string,
       action: function,
@@ -406,6 +418,7 @@ parameters = {
         type = "client", -- This specifies the type of event the target has to trigger on click, this can be "client", "server", "command" or "qbcommand", this is OPTIONAL and will only work if the event is also specified
         event = "Test:Event", -- This is the event it will trigger on click, this can be a client event, server event, command or qbcore registered command, NOTICE: Normal command can't have arguments passed through, QBCore registered ones can have arguments passed through
         icon = 'fas fa-example', -- This is the icon that will display next to this trigger option, all the icons can be found on fontawesome.com
+        style = "", -- This is where you can add the following to edit the color of the icon example: "--fa-primary-color: brown; --fa-secondary-color: tan; --fa-secondary-opacity: 1.0;",
         label = 'Test' -- This is the label of this option which you would be able to click on to trigger everything, this has to be a string
         targeticon = 'fas fa-example' -- This is the icon of the target itself, the icon changes to this when it turns blue on this specific option, this is OPTIONAL
         item = 'handcuffs', -- This is the item it has to check for, this option will only show up if the player has this item, this is OPTIONAL
@@ -435,6 +448,7 @@ exports['qb-target']:AddTargetEntity(entity, { -- The specified entity number
       type = "client", -- This specifies the type of event the target has to trigger on click, this can be "client", "server", "command" or "qbcommand", this is OPTIONAL and will only work if the event is also specified
       event = "Test:Event", -- This is the event it will trigger on click, this can be a client event, server event, command or qbcore registered command, NOTICE: Normal command can't have arguments passed through, QBCore registered ones can have arguments passed through
       icon = 'fas fa-example', -- This is the icon that will display next to this trigger option, all the icons can be found on fontawesome.com
+        style = "", -- This is where you can add the following to edit the color of the icon example: "--fa-primary-color: brown; --fa-secondary-color: tan; --fa-secondary-opacity: 1.0;",
       label = 'Test' -- This is the label of this option which you would be able to click on to trigger everything, this has to be a string
       targeticon = 'fas fa-example' -- This is the icon of the target itself, the icon changes to this when it turns blue on this specific option, this is OPTIONAL
       item = 'handcuffs', -- This is the item it has to check for, this option will only show up if the player has this item, this is OPTIONAL
@@ -473,6 +487,7 @@ targetoptions = {
       event: string,
       icon: string,
       label: string,
+      style: string,
       targeticon: string,
       item: string,
       action: function,
@@ -496,6 +511,7 @@ targetoptions = {
         type = "client", -- This specifies the type of event the target has to trigger on click, this can be "client", "server", "command" or "qbcommand", this is OPTIONAL and will only work if the event is also specified
         event = "Test:Event", -- This is the event it will trigger on click, this can be a client event, server event, command or qbcore registered command, NOTICE: Normal command can't have arguments passed through, QBCore registered ones can have arguments passed through
         icon = 'fas fa-example', -- This is the icon that will display next to this trigger option, all the icons can be found on fontawesome.com
+        style = "", -- This is where you can add the following to edit the color of the icon example: "--fa-primary-color: brown; --fa-secondary-color: tan; --fa-secondary-opacity: 1.0;",
         label = 'Test' -- This is the label of this option which you would be able to click on to trigger everything, this has to be a string
         targeticon = 'fas fa-example' -- This is the icon of the target itself, the icon changes to this when it turns blue on this specific option, this is OPTIONAL
         item = 'handcuffs', -- This is the item it has to check for, this option will only show up if the player has this item, this is OPTIONAL
@@ -529,6 +545,7 @@ exports['qb-target']:AddEntityZone("name", entity, { -- The specified entity num
         type = "client", -- This specifies the type of event the target has to trigger on click, this can be "client", "server", "command" or "qbcommand", this is OPTIONAL and will only work if the event is also specified
         event = "Test:Event", -- This is the event it will trigger on click, this can be a client event, server event, command or qbcore registered command, NOTICE: Normal command can't have arguments passed through, QBCore registered ones can have arguments passed through
         icon = 'fas fa-example', -- This is the icon that will display next to this trigger option, all the icons can be found on fontawesome.com
+        style = "", -- This is where you can add the following to edit the color of the icon example: "--fa-primary-color: brown; --fa-secondary-color: tan; --fa-secondary-opacity: 1.0;",
         label = 'Test' -- This is the label of this option which you would be able to click on to trigger everything, this has to be a string
         targeticon = 'fas fa-example' -- This is the icon of the target itself, the icon changes to this when it turns blue on this specific option, this is OPTIONAL
         item = 'handcuffs', -- This is the item it has to check for, this option will only show up if the player has this item, this is OPTIONAL
@@ -563,6 +580,7 @@ parameters = {
       event: string,
       icon: string,
       label: string,
+      style: string,
       targeticon: string,
       item: string,
       action: function,
@@ -586,6 +604,7 @@ parameters = {
         type = "client", -- This specifies the type of event the target has to trigger on click, this can be "client", "server", "command" or "qbcommand", this is OPTIONAL and will only work if the event is also specified
         event = "Test:Event", -- This is the event it will trigger on click, this can be a client event, server event, command or qbcore registered command, NOTICE: Normal command can't have arguments passed through, QBCore registered ones can have arguments passed through
         icon = 'fas fa-example', -- This is the icon that will display next to this trigger option, all the icons can be found on fontawesome.com
+        style = "", -- This is where you can add the following to edit the color of the icon example: "--fa-primary-color: brown; --fa-secondary-color: tan; --fa-secondary-opacity: 1.0;",
         label = 'Test' -- This is the label of this option which you would be able to click on to trigger everything, this has to be a string
         targeticon = 'fas fa-example' -- This is the icon of the target itself, the icon changes to this when it turns blue on this specific option, this is OPTIONAL
         item = 'handcuffs', -- This is the item it has to check for, this option will only show up if the player has this item, this is OPTIONAL
@@ -617,6 +636,7 @@ exports['qb-target']:AddTargetModel(models { -- This defines the models, can be 
         type = "client", -- This specifies the type of event the target has to trigger on click, this can be "client", "server", "command" or "qbcommand", this is OPTIONAL and will only work if the event is also specified
         event = "Test:Event", -- This is the event it will trigger on click, this can be a client event, server event, command or qbcore registered command, NOTICE: Normal command can't have arguments passed through, QBCore registered ones can have arguments passed through
         icon = 'fas fa-example', -- This is the icon that will display next to this trigger option, all the icons can be found on fontawesome.com
+        style = "", -- This is where you can add the following to edit the color of the icon example: "--fa-primary-color: brown; --fa-secondary-color: tan; --fa-secondary-opacity: 1.0;",
         label = 'Test' -- This is the label of this option which you would be able to click on to trigger everything, this has to be a string
         targeticon = 'fas fa-example' -- This is the icon of the target itself, the icon changes to this when it turns blue on this specific option, this is OPTIONAL
         item = 'handcuffs', -- This is the item it has to check for, this option will only show up if the player has this item, this is OPTIONAL

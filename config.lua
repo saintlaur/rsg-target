@@ -32,6 +32,7 @@ Config.BoxZones = {
 
 }
 
+
 Config.PolyZones = {
 
 }
@@ -45,6 +46,7 @@ Config.TargetEntities = {
 }
 
 Config.EntityZones = {
+
 }
 
 Config.TargetModels = {
@@ -72,15 +74,15 @@ Config.PlayerOptions = {
 -------------------------------------------------------------------------------
 
 if Config.EnableDefaultOptions then
-	Config.ToggleDoor = function(vehicle, door)
-		if GetVehicleDoorLockStatus(vehicle) ~= 2 then
-			if GetVehicleDoorAngleRatio(vehicle, door) > 0.0 then
-				SetVehicleDoorShut(vehicle, door, false)
-			else
-				SetVehicleDoorOpen(vehicle, door, false)
-			end
-		end
-	end
+    Config.ToggleDoor = function(vehicle, door)
+        if GetVehicleDoorLockStatus(vehicle) ~= 2 then
+            if GetVehicleDoorAngleRatio(vehicle, door) > 0.0 then
+                SetVehicleDoorShut(vehicle, door, false)
+            else
+                SetVehicleDoorOpen(vehicle, door, false)
+            end
+        end
+    end
 end
 
 -------------------------------------------------------------------------------
@@ -88,7 +90,87 @@ end
 -------------------------------------------------------------------------------
 
 if Config.EnableDefaultOptions then
- -- NIL
+    Bones['seat_dside_f'] = {
+        options = {
+            {
+                icon = "fa-duotone fa-door-open",
+                style = "",
+                label = "Toggle front Door",
+                canInteract = function(entity)
+                    return GetEntityBoneIndexByName(entity, 'door_dside_f') ~= -1
+                end,
+                action = function(entity)
+                    Config.ToggleDoor(entity, 0)
+                end
+            },
+        },
+        distance = 1.2
+    }
+
+    Bones['seat_pside_f'] = {
+        options = {
+            {
+                icon = "fa-duotone fa-door-open",
+                style = "",
+                label = "Toggle front Door",
+                canInteract = function(entity)
+                    return GetEntityBoneIndexByName(entity, 'door_pside_f') ~= -1
+                end,
+                action = function(entity)
+                    Config.ToggleDoor(entity, 1)
+                end
+            },
+        },
+        distance = 1.2
+    }
+
+    Bones['seat_dside_r'] = {
+        options = {
+            {
+                icon = "fa-duotone fa-door-open",
+                style = "",
+                label = "Toggle rear Door",
+                canInteract = function(entity)
+                    return GetEntityBoneIndexByName(entity, 'door_dside_r') ~= -1
+                end,
+                action = function(entity)
+                    Config.ToggleDoor(entity, 2)
+                end
+            },
+        },
+        distance = 1.2
+    }
+
+    Bones['seat_pside_r'] = {
+        options = {
+            {
+                icon = "fa-duotone fa-door-open",
+                style = "",
+                label = "Toggle rear Door",
+                canInteract = function(entity)
+                    return GetEntityBoneIndexByName(entity, 'door_pside_r') ~= -1
+                end,
+                action = function(entity)
+                    Config.ToggleDoor(entity, 3)
+                end
+            },
+        },
+        distance = 1.2
+    }
+
+    Bones['bonnet'] = {
+        options = {
+            {
+                icon = "fa-duotone fa-engine",
+                style = "",
+                label = "Toggle Hood",
+                action = function(entity)
+                    Config.ToggleDoor(entity, 4)
+                end
+            },
+        },
+        distance = 0.9
+    }
 end
 
 -------------------------------------------------------------------------------
