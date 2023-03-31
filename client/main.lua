@@ -253,12 +253,14 @@ local Functions = {
     end,
     CloneTable = function(self, table)
         local copy = {}
-        for k,v in pairs(table) do
-            if type(v) == 'table' then
-                copy[k] = self:CloneTable(v)
-            else
-                if type(v) == 'function' then v = nil end
-                copy[k] = v
+        if table then
+            for k,v in pairs(table) do
+                if type(v) == 'table' then
+                    copy[k] = self:CloneTable(v)
+                else
+                    if type(v) == 'function' then v = nil end
+                    copy[k] = v
+                end
             end
         end
         return copy
